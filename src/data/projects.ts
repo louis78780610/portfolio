@@ -1,4 +1,4 @@
-import type { Project } from '../components/molecules/ProjectCard'
+import type { Project } from '../components/molecules/project/ProjectCard'
 
 const projects: Project[] = [
   {
