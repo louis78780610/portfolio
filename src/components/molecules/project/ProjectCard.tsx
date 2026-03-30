@@ -16,11 +16,17 @@ export type Project = {
 
 const ProjectCard: React.FC<{ project: Project }> = ({ project }) => {
   return (
-    <Card>
+    <Card sx={{ height: '100%', display: 'flex', flexDirection: 'column' }}>
       {project.image && (
-        <CardMedia component="img" height="140" image={project.image} alt={project.title} />
+        <CardMedia
+          component="img"
+          height="140"
+          image={project.image}
+          alt={project.title}
+          sx={{ objectFit: 'cover' }}
+        />
       )}
-      <CardContent>
+      <CardContent sx={{ flexGrow: 1 }}>
         <Typography gutterBottom variant="h6" component="div">
           {project.title}
         </Typography>

@@ -1,8 +1,8 @@
 import React from 'react'
-import Grid from '@mui/material/Grid'
+import Grid from '@mui/material/GridLegacy'
 import Typography from '@mui/material/Typography'
-import ProjectCard from '../components/molecules/ProjectCard'
-import type { Project } from '../components/molecules/ProjectCard'
+import ProjectCard from '../components/molecules/project/ProjectCard'
+import type { Project } from '../components/molecules/project/ProjectCard'
 import projects from '../data/projects'
 
 const Projects: React.FC = () => {

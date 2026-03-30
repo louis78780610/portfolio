@@ -9,18 +9,44 @@ import Box from '@mui/material/Box'
 const Navbar: React.FC = () => {
   return (
     <AppBar position="static">
-      <Toolbar>
-        <Typography variant="h6" component={RouterLink} to="/" sx={{ color: 'inherit', textDecoration: 'none', flexGrow: 1 }}>
+      <Toolbar sx={{ justifyContent: 'space-between' }}>
+        <Typography
+          variant="h6"
+          component={RouterLink}
+          to="/"
+          sx={
+            {
+              color: 'inherit',
+              fontFamily: "'Noto Serif JP', 'Playfair Display', serif",
+              textDecoration: 'none'
+              }
+            }
+          >
           My Portfolio
         </Typography>
         <Box sx={{ display: 'flex', gap: 1 }}>
-          <Button color="inherit" component={RouterLink} to="/projects">
+          <Button
+            sx={{ fontFamily: "'Noto Serif JP', 'Playfair Display', serif" }}
+            color="inherit"
+            component={RouterLink}
+            to="/projects"
+          >
             Projects
           </Button>
-          <Button color="inherit" component={RouterLink} to="/about">
+          <Button
+            sx={{ fontFamily: "'Noto Serif JP', 'Playfair Display', serif" }}
+            color="inherit"
+            component={RouterLink}
+            to="/about"
+          >
             About
           </Button>
-          <Button color="inherit" component={RouterLink} to="/contact">
+          <Button
+            sx={{ fontFamily: "'Noto Serif JP', 'Playfair Display', serif" }}
+            color="inherit"
+            component={RouterLink}
+            to="/contact"
+          >
             Contact
           </Button>
         </Box>
