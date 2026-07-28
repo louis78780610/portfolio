@@ -3,9 +3,10 @@ import type { Project } from '../components/molecules/project/ProjectCard'
 const projects: Project[] = [
   {
     id: 'project-1',
-    title: '作品 1',
+    title: 'タスクマネージャー',
     description: 'これはサンプルの作品説明です。技術スタックやポイントを記載します。',
-    image: '/images/sample1.svg',
+    image: '/images/task-manager.png',
+    link: 'https://react-task-manager-one-silk.vercel.app/',
   },
   {
     id: 'project-2',

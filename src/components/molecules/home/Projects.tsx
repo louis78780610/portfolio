@@ -4,12 +4,12 @@ import projects from "../../../data/projects"
 import ProjectCard from "../project/ProjectCard"
 import Title from "../../atoms/Title"
 
-const Home: React.FC = () => {
+const Projects: React.FC = () => {
   return (
     <>
       {/* Featured Projects */}
       <Box sx={{ mb: 4, textAlign: 'center' }}>
-        <Title variant="h5">Featured Projects</Title>
+        <Title variant="h5">Projects</Title>
         <Grid container spacing={2} justifyContent="center">
           {projects.slice(0, 3).map((p) => (
             <Grid item xs={12} sm={6} md={4} key={p.id}>
@@ -22,4 +22,4 @@ const Home: React.FC = () => {
   )
 }
 
-export default Home
+export default Projects
