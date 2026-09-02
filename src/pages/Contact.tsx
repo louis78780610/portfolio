@@ -8,7 +8,7 @@ const Contact: React.FC = () => {
       <Typography variant="h4" gutterBottom>
         Contact
       </Typography>
-      <Typography>メール: your-email@example.com</Typography>
+      <Typography>メール: rui.m.ycrk.lucky7@gmail.com</Typography>
     </Box>
   )
 }

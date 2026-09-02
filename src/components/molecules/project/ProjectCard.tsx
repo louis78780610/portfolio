@@ -12,15 +12,34 @@ export type Project = {
   title: string
   description: string
   image?: string
+  link?: string
 }
 
 const ProjectCard: React.FC<{ project: Project }> = ({ project }) => {
   return (
-    <Card>
+    <Card sx={{ height: '100%', display: 'flex', flexDirection: 'column' }}>
       {project.image && (
-        <CardMedia component="img" height="140" image={project.image} alt={project.title} />
+        project.link ? (
+          <a href={project.link} target="_blank" rel="noopener noreferrer" style={{ display: 'block' }}>
+            <CardMedia
+              component="img"
+              height="140"
+              image={project.image}
+              alt={project.title}
+              sx={{ objectFit: 'cover' }}
+            />
+          </a>
+        ) : (
+          <CardMedia
+            component="img"
+            height="140"
+            image={project.image}
+            alt={project.title}
+            sx={{ objectFit: 'cover' }}
+          />
+        )
       )}
-      <CardContent>
+      <CardContent sx={{ flexGrow: 1 }}>
         <Typography gutterBottom variant="h6" component="div">
           {project.title}
         </Typography>
