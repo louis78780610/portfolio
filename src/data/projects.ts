@@ -10,15 +10,19 @@ const projects: Project[] = [
   },
   {
     id: 'project-2',
-    title: '作品 2',
-    description: '別のサンプル作品。動作デモやリンクを追加してください。',
-    image: '/images/sample2.svg',
+    title: 'コーポレートサイト（WED）',
+    description:
+      '架空のWeb制作会社「WED」のコーポレートサイト。MUIでレスポンシブに実装し、スムーズスクロールやお問い合わせフォームを備えています。',
+    image: '/images/task10.png',
+    link: 'https://task10-sage.vercel.app/',
   },
   {
     id: 'project-3',
-    title: '作品 3',
-    description: '3つ目の作品サンプル。',
-    image: '/images/sample3.svg',
+    title: 'ブランドサイト（創作）',
+    description:
+      '架空のピスタチオブランド「創作」のブランドサイト。縦書きの和風デザインで、店舗情報やスクロール演出を実装しています。',
+    image: '/images/task11.png',
+    link: 'https://task11-beta.vercel.app/',
   },
 ]
 
