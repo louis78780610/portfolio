@@ -1,20 +1,9 @@
 import React from 'react'
-import Typography from '@mui/material/Typography'
-import Box from '@mui/material/Box'
+import OrganismsAbout from '../components/organisms/about/OrganismsAbout'
 
+// /about のページ。中身は organisms/about/OrganismsAbout にまとめている
 const About: React.FC = () => {
-  return (
-    <Box>
-      <Typography
-        sx={{ color: '#707070', fontFamily: "'Noto Serif JP', 'Playfair Display', serif" }}
-        variant="h4"
-        gutterBottom
-      >
-        About
-      </Typography>
-      <Typography>自己紹介文をここに書きます。</Typography>
-    </Box>
-  )
+  return <OrganismsAbout />
 }
 
 export default About

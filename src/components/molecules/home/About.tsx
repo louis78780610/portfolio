@@ -3,6 +3,7 @@ import Grid from '@mui/material/GridLegacy'
 import Typography from '@mui/material/Typography'
 import Title from '../../atoms/Title'
 import { Button } from '@mui/material'
+import { Link as RouterLink } from 'react-router-dom'
 
 const About: React.FC = () => {
   return (
@@ -13,7 +14,7 @@ const About: React.FC = () => {
           <Typography>
             2024年2月よりSES企業にて、フロントエンドエンジニアとして複数案件に携わってきました。主に React / TypeScript を用いた開発を担当しています。
           </Typography>
-          <Button sx={{ mt: 2 }} component="a" href="/about">詳しく見る</Button>
+          <Button sx={{ mt: 2 }} component={RouterLink} to="/about">詳しく見る</Button>
         </Grid>
       </Grid>
     </>
